@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -40,7 +40,7 @@
                                                 <rect key="frame" x="60" y="0.0" width="268" height="40"/>
                                                 <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
                                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="24"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-h8-veS">
                                                 <rect key="frame" x="348" y="1" width="40" height="38.666666666666671"/>
@@ -51,6 +51,9 @@
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" backgroundImage="magnifyingglass.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="seachPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJt-zj-aYs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -122,6 +125,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vWf-1M-jJG" secondAttribute="bottom" constant="20" id="zXA-sV-jCR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conditionImage" destination="EHx-ND-g0Y" id="qJ4-PY-cYy"/>
+                        <outlet property="locationLabel" destination="tdz-Gg-Y1A" id="1Dl-R4-Tqy"/>
+                        <outlet property="searchTextField" destination="pYW-RY-4P2" id="Y25-1i-an7"/>
+                        <outlet property="temperatureLabel" destination="5ne-2U-Nlk" id="TD8-1S-Zmj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
