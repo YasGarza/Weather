@@ -56,15 +56,39 @@
 		50DDE4B3296347CE005F10FD /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				50DDE4CA29639FBD005F10FD /* Model */,
+				50DDE4C929639FB6005F10FD /* View */,
+				50DDE4C829639FA8005F10FD /* Controller */,
 				50DDE4B4296347CE005F10FD /* AppDelegate.swift */,
 				50DDE4B6296347CE005F10FD /* SceneDelegate.swift */,
-				50DDE4B8296347CE005F10FD /* ViewController.swift */,
-				50DDE4BA296347CE005F10FD /* Main.storyboard */,
 				50DDE4BD296347D2005F10FD /* Assets.xcassets */,
 				50DDE4BF296347D2005F10FD /* LaunchScreen.storyboard */,
 				50DDE4C2296347D2005F10FD /* Info.plist */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		50DDE4C829639FA8005F10FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50DDE4B8296347CE005F10FD /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50DDE4C929639FB6005F10FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50DDE4BA296347CE005F10FD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50DDE4CA29639FBD005F10FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
