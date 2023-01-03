@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     
+    let weatherManager = WeatherManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchTextField.delegate = self
@@ -20,7 +22,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func seachPressed(_ sender: UIButton) {
         searchTextField.endEditing(true)
-        print(searchTextField.text)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -28,7 +29,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         guard let searchValue = textField.text else {
             return false
         }
-        print(searchValue)
         return true
     }
     
@@ -42,6 +42,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        if let city = textField.text {
+            weatherManager.fetchWeather(cityName: city)
+        }
+        
         textField.text = nil
     }
     

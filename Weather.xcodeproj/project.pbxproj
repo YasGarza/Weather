@@ -13,6 +13,7 @@
 		50DDE4BC296347CE005F10FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DDE4BA296347CE005F10FD /* Main.storyboard */; };
 		50DDE4BE296347D2005F10FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DDE4BD296347D2005F10FD /* Assets.xcassets */; };
 		50DDE4C1296347D2005F10FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DDE4BF296347D2005F10FD /* LaunchScreen.storyboard */; };
+		50DDE4CC2963AE87005F10FD /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DDE4CB2963AE87005F10FD /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		50DDE4BD296347D2005F10FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50DDE4C0296347D2005F10FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50DDE4C2296347D2005F10FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50DDE4CB2963AE87005F10FD /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		50DDE4CD2963AFE9005F10FD /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 				50DDE4BD296347D2005F10FD /* Assets.xcassets */,
 				50DDE4BF296347D2005F10FD /* LaunchScreen.storyboard */,
 				50DDE4C2296347D2005F10FD /* Info.plist */,
+				50DDE4CD2963AFE9005F10FD /* Secrets.xcconfig */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -87,6 +91,7 @@
 		50DDE4CA29639FBD005F10FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				50DDE4CB2963AE87005F10FD /* WeatherManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			files = (
 				50DDE4B9296347CE005F10FD /* ViewController.swift in Sources */,
 				50DDE4B5296347CE005F10FD /* AppDelegate.swift in Sources */,
+				50DDE4CC2963AE87005F10FD /* WeatherManager.swift in Sources */,
 				50DDE4B7296347CE005F10FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +198,7 @@
 /* Begin XCBuildConfiguration section */
 		50DDE4C3296347D2005F10FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DDE4CD2963AFE9005F10FD /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -252,6 +259,7 @@
 		};
 		50DDE4C4296347D2005F10FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DDE4CD2963AFE9005F10FD /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
